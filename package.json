@@ -1,0 +1,36 @@
+{
+  "name": "lootsafe.core",
+  "version": "1.0.0",
+  "description": "LootSafe Core API 2.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "compile": "cd api/contracts/core && truffle compile",
+    "migrate": "cd api/contracts/core && truffle migrate",
+    "deploy": "npm run compile && npm run migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LootSafe/lootsafe.core.git"
+  },
+  "author": "Matt Wisniewski",
+  "license": "Closed",
+  "bugs": {
+    "url": "https://github.com/LootSafe/lootsafe.core/issues"
+  },
+  "homepage": "https://github.com/LootSafe/lootsafe.core#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "ethjs": "^0.4.0",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "0.0.16",
+    "koa-logger": "^3.2.0",
+    "koa-route": "^3.2.0",
+    "ngrok": "^3.1.0",
+    "truffle": "^4.1.14",
+    "web3": "^1.0.0-beta.36"
+  }
+}
