@@ -6,7 +6,7 @@ const { contracts } = require('../../../config');
  * @route
  */
 module.exports = () => {
-    const registry = require(`${contracts.buildDir}/Registry.json`);
+    const registry = require(`${contracts.buildDir}/Asset.json`);
     return connect(registry.abi, contracts.registry).methods.owner().call((err, owner) => {
         return owner;
     });

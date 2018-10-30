@@ -8,8 +8,8 @@ const { create } = require('../../fetchers');
 module.exports = async (ctx) => {
   const req = ctx.request.body;
 
-  if (req.symbol && req.name && req.shortname) {
-    const response = await create(req.symbol, req.name, req.shortname);
+  if (req.symbol && req.name && req.identifier) {
+    const response = await create(req.symbol, req.name, req.identifier);
     ctx.status = 200;
     ctx.body = {
       status: 200,

@@ -2,5 +2,8 @@ module.exports = {
     meta: require('./meta'),
     owner: require('./registry/owner'),
     assets: require('./registry/assets'),
-    create: require('./registry/create')
+    create: require('./registry/create'),
+    findAddress: require('./registry/findAddress'),
+    assetOwner: require('./asset/owner'),
+    setMetadata: require('./asset/setMetadata')
 };
