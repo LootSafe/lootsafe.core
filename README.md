@@ -28,6 +28,8 @@ Example metadata is outlined below in the asset example.
 
 _Asset Example:_
 
+<img src="https://i.imgur.com/5twbiyB.png"  width=500 />
+
 |                 |                   |
 |-----------------|-------------------|
 | **Name**        | Philanthropy Draw |

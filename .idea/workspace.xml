@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf90b0-2830-464e-bdad-7c79fd3a99f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/fetchers/asset/owner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fetchers/asset/setMetadata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fetchers/individiual/inventory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fetchers/registry/findAddress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/Asset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/asset/owner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/asset/setMetadata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/registry/findAddress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/contracts/core" beforeDir="false" afterPath="$PROJECT_DIR$/api/contracts/core" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/contracts/core/contracts/Asset.sol" beforeDir="false" afterPath="$PROJECT_DIR$/api/contracts/core/contracts/Asset.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/contracts/core/contracts/Registry.sol" beforeDir="false" afterPath="$PROJECT_DIR$/api/contracts/core/contracts/Registry.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fetchers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetchers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fetchers/registry/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetchers/registry/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fetchers/registry/owner.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetchers/registry/owner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/registry/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/registry/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +26,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="69" />
           <entry key="json" value="4" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
           <entry key="sol" value="16" />
         </counts>
       </usages-collector>
@@ -51,7 +34,7 @@
         <counts>
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="69" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Solidity file" value="16" />
         </counts>
@@ -61,7 +44,7 @@
           <entry key="gitignore" value="19" />
           <entry key="js" value="6048" />
           <entry key="json" value="170" />
-          <entry key="md" value="1954" />
+          <entry key="md" value="2026" />
           <entry key="sol" value="202" />
         </counts>
       </usages-collector>
@@ -69,7 +52,7 @@
         <counts>
           <entry key="JSON" value="170" />
           <entry key="JavaScript" value="6048" />
-          <entry key="Markdown" value="1954" />
+          <entry key="Markdown" value="2026" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Solidity file" value="202" />
         </counts>
@@ -78,15 +61,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/fetchers/registry/findAddress.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,11 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/fetchers/asset/setMetadata.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="482">
+                <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -194,7 +180,6 @@
         <option value="$PROJECT_DIR$/api/fetchers/registry/findAddress.js" />
         <option value="$PROJECT_DIR$/api/fetchers/asset/owner.js" />
         <option value="$PROJECT_DIR$/api/routes/asset/owner.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/api/fetchers/registry/owner.js" />
         <option value="$PROJECT_DIR$/api/routes/index.js" />
         <option value="$PROJECT_DIR$/api/routes/registry/findAddress.js" />
@@ -208,6 +193,7 @@
         <option value="$PROJECT_DIR$/api/fetchers/registry/create.js" />
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/api/fetchers/asset/setMetadata.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -470,16 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="262">
-            <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/fetchers/registry/assets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -652,6 +628,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="482">
+            <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
