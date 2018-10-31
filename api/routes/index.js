@@ -6,5 +6,6 @@ module.exports = {
     findAddress: require('./registry/findAddress'),
     assetOwner: require('./asset/owner'),
     setMetadata: require('./asset/setMetadata'),
+    setFileMetadata: require('./asset/setFileMetadata'),
     list: require('./asset/list')
 };

@@ -5,6 +5,7 @@ const _ = require('koa-route');
 const bodyParser = require('koa-bodyparser');
 const logger = require('koa-logger');
 const convert = require('koa-convert');
+const busboy = require('koa-busboy');
 
 const {
     contracts,
@@ -23,6 +24,7 @@ const {
     findAddress,
     assetOwner,
     setMetadata,
+    setFileMetadata,
     list
 } = require('./routes');
 
@@ -32,6 +34,7 @@ const {
 app.use(convert(cors()));
 app.use(convert(bodyParser()));
 app.use(convert(logger()));
+app.use(busboy());
 
 // *******************
 // ----- Routes ------
@@ -44,7 +47,7 @@ app.use(_.post(`/v${version}/registry/create`, create));
 
 app.use(_.get(`/v${version}/asset/owner/:address`, assetOwner));
 app.use(_.post(`/v${version}/asset/metadata/set/:address`, setMetadata));
-//app.use(_.get(`/v${version}/asset/metadata/set/:address/:key`, setFileMetadata));
+app.use(_.post(`/v${version}/asset/metadata/file/set/:address/:key`, setFileMetadata));
 app.use(_.get(`/v${version}/asset/list`, list));
 
 // *******************
