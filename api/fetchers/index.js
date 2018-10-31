@@ -5,5 +5,6 @@ module.exports = {
     assets: require('./registry/assets'),
     create: require('./registry/create'),
     findAddress: require('./registry/findAddress'),
-    setMetadata: require('./asset/setMetadata')
+    setMetadata: require('./asset/setMetadata'),
+    list: require('./asset/list')
 };

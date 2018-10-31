@@ -52,6 +52,12 @@ class Asset {
             asset.save();
         });
     }
+
+    getAll () {
+        return AssetModel.find((err, assets) => {
+            return assets;
+        });
+    }
 }
 
 

@@ -22,7 +22,8 @@ const {
     create,
     findAddress,
     assetOwner,
-    setMetadata
+    setMetadata,
+    list
 } = require('./routes');
 
 // *******************
@@ -43,6 +44,7 @@ app.use(_.post(`/v${version}/registry/create`, create));
 
 app.use(_.get(`/v${version}/asset/owner/:address`, assetOwner));
 app.use(_.post(`/v${version}/asset/metadata/set/:address`, setMetadata));
+app.use(_.get(`/v${version}/asset/list`, list));
 
 // *******************
 // ------ Start ------
