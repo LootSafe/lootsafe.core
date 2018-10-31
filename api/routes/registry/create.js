@@ -1,4 +1,5 @@
-const { create } = require('../../fetchers');
+const { create } = require('../../setters');
+const respond = require('../respond');
 
 /**
  * Create assets on the registry
@@ -9,19 +10,10 @@ module.exports = async (ctx) => {
   const req = ctx.request.body;
 
   if (req.symbol && req.name && req.identifier) {
-    const response = await create(req.symbol, req.name, req.identifier);
-    ctx.status = 200;
-    ctx.body = {
-      status: 200,
-      message: 'Requested new asset creation.',
-      data: response
-    };
+      const response = await create(req.symbol, req.name, req.identifier);
+      respond(ctx, 200, 'Requested new asset creation.', response);
   } else {
-    ctx.status = 422;
-    ctx.body = {
-      status: 422,
-      message: 'Missing required creation params.'
-    };
+      respond(ctx, 422, 'Missing required creation params.', response);
   }
 };
 

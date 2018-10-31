@@ -1,9 +1,10 @@
-const connect = require('../connect');
+const { connect } = require('../../helpers');
 const { contracts } = require('../../../config');
 
 /**
- * Get the owner of the registry contract
- * @route
+ * Get the address of the registry owner
+ * @getter
+ * @returns the owners address
  */
 module.exports = () => {
     const registry = require(`${contracts.buildDir}/Registry.json`);

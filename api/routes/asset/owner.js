@@ -1,16 +1,13 @@
-const { assetOwner } = require('../../fetchers');
+const { assetOwner } = require('../../getters');
+const respond = require('../respond');
 
 /**
  * Get the address of the asset owner
  * @route
+ * @returns the owner of an asset
  */
 module.exports = async (ctx, address) => {
-  const response = await assetOwner(address);
-  ctx.status = 200;
-  ctx.body = {
-    status: 200,
-    message: 'Asset owner fetched',
-    data: response
-  };
+    const response = await assetOwner(address);
+    respond(ctx, 200, 'Asset owner fetched.', response);
 };
 

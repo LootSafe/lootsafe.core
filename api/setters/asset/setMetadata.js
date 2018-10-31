@@ -1,4 +1,4 @@
-const connect = require('../connect');
+const { connect } = require('../../helpers');
 const Asset = require('../../models/Asset');
 const { provider, contracts, defaultAccount, gas } = require('../../../config');
 
@@ -6,8 +6,10 @@ const Web3 = require('web3');
 const web3 = new Web3(new Web3.providers.HttpProvider(provider));
 
 /**
- * Create a new asset
- * @route
+ * Set metadata on a specific asset
+ * @setter
+ * @param address the address of the asset to modify
+ * @returns the transaction hash
  */
 module.exports = (address, key, value) => {
     const asset = require(`${contracts.buildDir}/Asset.json`);

@@ -1,5 +1,4 @@
-const chalk = require('chalk');
-const connect = require('../connect');
+const { connect } = require('../../helpers');
 const Asset = require('../../models/Asset');
 const { provider, contracts, defaultAccount, gas } = require('../../../config');
 
@@ -7,8 +6,9 @@ const Web3 = require('web3');
 const web3 = new Web3(new Web3.providers.HttpProvider(provider));
 
 /**
- * Create a new asset
- * @route
+ * Create assets on the registry
+ * @setter
+ * @returns transaction hash for asset creation
  */
 module.exports = (symbol = 'DRAW', name = 'Philanthropy Draw', identifier = 'pdraw') => {
     const registry = require(`${contracts.buildDir}/Registry.json`);

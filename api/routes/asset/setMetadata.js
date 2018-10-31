@@ -1,25 +1,19 @@
-const { setMetadata } = require('../../fetchers');
+const { setMetadata } = require('../../setters');
+const respond = require('../respond');
 
 /**
- * Get the address of the asset owner
+ * Set metadata on a specific asset
  * @route
+ * @param address the address of the asset to modify
+ * @returns the transaction hash
  */
 module.exports = async (ctx, address) => {
   const req = ctx.request.body;
   if (req.key && req.value) {
-    const response = await setMetadata(address, req.key, req.value);
-    ctx.status = 200;
-    ctx.body = {
-      status: 200,
-      message: 'Metadata set.',
-      data: response
-    };
+      const response = await setMetadata(address, req.key, req.value);
+      respond(ctx, 200, 'Metadata set.', response);
   } else {
-    ctx.status = 422;
-    ctx.body = {
-      status: 422,
-      message: 'Missing required creation params.'
-    };
+      respond(ctx, 422, 'Missing required creation params.', null);
   }
 };
 

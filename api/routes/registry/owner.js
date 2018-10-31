@@ -1,16 +1,13 @@
-const { owner } = require('../../fetchers');
+const { owner } = require('../../getters');
+const respond = require('../respond');
 
 /**
  * Get the address of the registry owner
  * @route
+ * @returns the owners address
  */
 module.exports = async (ctx) => {
-  const response = await owner();
-  ctx.status = 200;
-  ctx.body = {
-    status: 200,
-    message: 'Registry owner fetched',
-    data: response
-  };
+    const response = await owner();
+    respond(ctx, 200, 'Registry owner fetched.', response);
 };
 
