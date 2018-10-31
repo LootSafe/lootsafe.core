@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf90b0-2830-464e-bdad-7c79fd3a99f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/fetchers/asset/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/asset/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/contracts/core" beforeDir="false" afterPath="$PROJECT_DIR$/api/contracts/core" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/contracts/core/contracts/Asset.sol" beforeDir="false" afterPath="$PROJECT_DIR$/api/contracts/core/contracts/Asset.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/contracts/core/contracts/Registry.sol" beforeDir="false" afterPath="$PROJECT_DIR$/api/contracts/core/contracts/Registry.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fetchers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetchers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/Asset.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/Asset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +44,7 @@
           <entry key="gitignore" value="19" />
           <entry key="js" value="6531" />
           <entry key="json" value="170" />
-          <entry key="md" value="2406" />
+          <entry key="md" value="2484" />
           <entry key="sol" value="202" />
         </counts>
       </usages-collector>
@@ -59,7 +52,7 @@
         <counts>
           <entry key="JSON" value="170" />
           <entry key="JavaScript" value="6531" />
-          <entry key="Markdown" value="2406" />
+          <entry key="Markdown" value="2484" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Solidity file" value="202" />
         </counts>
@@ -99,8 +92,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="758">
-                <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              <first_editor relative-caret-position="382">
+                <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -627,8 +620,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="758">
-            <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <first_editor relative-caret-position="382">
+            <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           </first_editor>
           <second_editor />
         </state>
