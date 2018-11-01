@@ -18,6 +18,13 @@ module.exports = async (ctx, address, key) => {
   });
   const ipfsResult = await ipfsUpload;
   const response = await setMetadata(address, key, ipfsResult.hash);
-  respond(ctx, 200, 'Asset metadata set.', response);
+  if (response.error) {
+      respond(ctx, 500, response.error.toString());
+  } else {
+      respond(ctx, 200, 'Asset metadata set.', {
+          eth_tx: response.hash,
+          ipfs_hash: ipfsResult.hash
+      });
+  }
 };
 

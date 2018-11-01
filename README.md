@@ -33,8 +33,8 @@ Example metadata is outlined below in the asset example.
 | **Icon**        |<img src="https://i.imgur.com/QJSFuKW.png"  height=250 /> <img src="https://images-ext-2.discordapp.net/external/nigBBQFV2M-Xl1L2BqzAsCYJJpQ0gL41Rv3PhPH-DQw/https/gateway.ipfs.io/ipfs/QmcLpZJptMhtpYTKRmUgTthCUErazPujZcpn4fJGDFYV6H"  height=250 /> |
 | **Name**        | Philanthropy Draw |
 | **Symbol**      | DRAW              |
-| **Model**       | QmWWQSuPMS6aXCbZKpEjPHPUZN2NjB3YrhJTHsV4X3vb2t              |
-| **Icon**        | QmT4AeWE9Q9EaoyLJiqaZuYQ8mJeq4ZBncjjFH9dQ9uDVA              |
+| **Model**       | QmPxpf4TEqy7jRtfBZozXjnsVvWrvfg36SohZCtu9vvN3P              |
+| **Icon**        | QmTi3n3Kr6SyHvYRMxiJ1kCfXQ11bvBmhEJB8NDez7h8qM              |
 | **Rarity**      | Epic              |
 | **Version**     | Origin            |
 | **Description** | Made from the golden spine ripped from the back of the god Midasil and tied with a bowstring made from a single silver hair stolen from the goddess Ariana in her slumber.             |

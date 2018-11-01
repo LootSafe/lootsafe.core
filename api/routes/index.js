@@ -7,5 +7,8 @@ module.exports = {
     assetOwner: require('./asset/owner'),
     setMetadata: require('./asset/setMetadata'),
     setFileMetadata: require('./asset/setFileMetadata'),
-    list: require('./asset/list')
+    list: require('./asset/list'),
+    get: require('./asset/get'),
+    inventory: require('./inventory/inventory'),
+    mint: require('./asset/mint')
 };

@@ -9,6 +9,7 @@ module.exports = {
     defaultAccount: '0xbBEF6Be732404c372153241cFB1d3213a054A2A8',
     provider: 'http://localhost:8545',
     gas: 3000000,
+    secret: 'changememeow',
     // If enabled, ngrok will forward the server
     dev: {
         devmode: true

@@ -11,7 +11,8 @@ const {
     contracts,
     version,
     port,
-    dev
+    dev,
+    secret
 } = require(`${__dirname}/../config`);
 
 const app = new Koa();
@@ -25,12 +26,28 @@ const {
     assetOwner,
     setMetadata,
     setFileMetadata,
-    list
+    list,
+    get,
+    inventory,
+    mint
 } = require('./routes');
 
 // *******************
 // --- Middleware ----
 // *******************
+function restricted (mw) {
+  return async function(ctx, next) {
+    if (ctx.request.headers.secret && ctx.request.headers.secret === secret) {
+      await next();
+    } else {
+        ctx.status = 410;
+        ctx.body = {
+            status: 401,
+            message: 'Unauthorized.'
+        };
+    }
+  };
+}
 app.use(convert(cors()));
 app.use(convert(bodyParser()));
 app.use(convert(logger()));
@@ -43,12 +60,17 @@ app.use(_.get(`/v${version}/`, meta));
 app.use(_.get(`/v${version}/registry/owner`, owner));
 app.use(_.get(`/v${version}/registry/assets`, assets));
 app.use(_.get(`/v${version}/registry/find/:identifier`, findAddress));
-app.use(_.post(`/v${version}/registry/create`, create));
+app.use(_.get(`/v${version}/inventory/:userAddress`, inventory));
 
 app.use(_.get(`/v${version}/asset/owner/:address`, assetOwner));
-app.use(_.post(`/v${version}/asset/metadata/set/:address`, setMetadata));
-app.use(_.post(`/v${version}/asset/metadata/file/set/:address/:key`, setFileMetadata));
 app.use(_.get(`/v${version}/asset/list`, list));
+app.use(_.get(`/v${version}/asset/get/:identifier`, get));
+
+app.use(restricted());
+app.use(_.post(`/v${version}/registry/create`, create));
+app.use(_.post(`/v${version}/asset/metadata/set/:address`, setMetadata));
+app.use(_.get(`/v${version}/asset/mint/:address/:recipient/:amount`, mint));
+app.use(_.post(`/v${version}/asset/metadata/file/set/:address/:key`, setFileMetadata));
 
 // *******************
 // ------ Start ------

@@ -11,7 +11,11 @@ module.exports = async (ctx, address) => {
   const req = ctx.request.body;
   if (req.key && req.value) {
       const response = await setMetadata(address, req.key, req.value);
-      respond(ctx, 200, 'Metadata set.', response);
+      if (response.error) {
+          respond(ctx, 500, response.error.toString());
+      } else {
+          respond(ctx, 200, 'Metadata set.', response.hash);
+      }
   } else {
       respond(ctx, 422, 'Missing required creation params.', null);
   }
