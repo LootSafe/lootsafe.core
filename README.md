@@ -4,7 +4,7 @@ LootSafe Core API 2.0
 
 ## What is it?
 
-<img src="https://i.imgur.com/A4LKoPb.png" align="right" height="50" />
+<img src="https://i.imgur.com/vGK8EF3.png" align="left" width="150" />
 LootSafe Core is a base implementation of asset tokenization currently implemented in on the Ethereum network. 
 The core API is extensible and should remain lightweight and minimal to keep things easy to update & support across
 multiple chains, and other solutions such as centralized database solutions where applicable.
@@ -14,7 +14,7 @@ multiple chains, and other solutions such as centralized database solutions wher
 
 ## Assets
 
-<img src="https://i.imgur.com/vGK8EF3.png" align="left" width="150" />
+<img src="https://i.imgur.com/A4LKoPb.png" align="right" height="150" />
 Assets are simply **ERC20** tokens with additional metadata functionality bolted on.. 
 We've kept the solution simple here, other assets such as **ERC721** are planned as 
 extensions to core however we do not believe they are necessary for the majority of solutions. Most games support a 
