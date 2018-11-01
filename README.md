@@ -15,6 +15,8 @@ Core requires **node v7.6.0** or higher for ES2015 and async function support. C
 
 > npm start
 
+## Getting Started
+TODO: List a few resources on getting started with ethereum and ipfs
 
 
 ## What is it?
