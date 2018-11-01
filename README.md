@@ -12,6 +12,7 @@ multiple chains, and other solutions such as centralized database solutions wher
 
 ## Assets
 
+<img src="https://i.imgur.com/vGK8EF3.png" align="left" width="150" />
 Assets are simply **ERC20** tokens with additional metadata functionality bolted on.. 
 We've kept the solution simple here, other assets such as **ERC721** are planned as 
 extensions to core however we do not believe they are necessary for the majority of solutions. Most games support a 
