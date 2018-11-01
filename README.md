@@ -25,6 +25,7 @@ limited amount of unique assets whereas millions of those assets are distributed
 's widespread adoption makes it a great choice. Thus the core implementation 
 supports **ERC20** and other token specifications will be supported through the use of extensions. 
 
+
 Assets support metadata inputs to give them substance. Metadata are key value pairs where the key is represented by a 
 `bytes32` identifier and the value is represented as a `string`. Some metadata values are expressed as a string value of 
 an IPFS hash to the metadata, this is useful when the metadata is an image, 3D model, skin, etc. 
