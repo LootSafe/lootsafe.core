@@ -72,7 +72,7 @@ Example metadata is outlined below in the asset example.
 
 ## Documentation
 
-<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.getpostman.com%2Fwp-content%2Fuploads%2F2015%2F04%2Flogo-postman-512--551cff77v1_site_icon.png&f=1" width=75 align="left" />
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.getpostman.com%2Fwp-content%2Fuploads%2F2015%2F04%2Flogo-postman-512--551cff77v1_site_icon.png&f=1" width=60 align="left" />
 A Postman collection is made available to get up and going quickly with the API, additionally documentation can be found 
 hosted at [web.postman.co](https://documenter.getpostman.com/view/254497/RzZ3N3Z6).
 
