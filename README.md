@@ -36,6 +36,7 @@ multiple chains, and other solutions such as centralized database solutions wher
 ## Assets
 
 <img src="https://i.imgur.com/A4LKoPb.png" align="right" height="150" />
+
 Assets are simply **ERC20** tokens with additional metadata functionality bolted on.. 
 We've kept the solution simple here, other assets such as **ERC721** are planned as 
 extensions to core however we do not believe they are necessary for the majority of solutions. Most games support a 
@@ -45,6 +46,7 @@ supports **ERC20** and other token specifications will be supported through the 
 
 
 <img src="https://i.imgur.com/EgwSq3o.png" align="left" height="120" />
+
 Assets support metadata inputs to give them substance. Metadata are key value pairs where the key is represented by a 
 `bytes32` identifier and the value is represented as a `string`. Some metadata values are expressed as a string value of 
 an IPFS hash to the metadata, this is useful when the metadata is an image, 3D model, skin, etc. 
