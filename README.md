@@ -1,5 +1,6 @@
 # LootSafe Core
-LootSafe Core API 2.0
+> LootSafe Core API 2.0
+
 ![](https://lootsafe.io/app/images/exchange.gif)
 
 ## What is it?
