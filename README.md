@@ -20,6 +20,9 @@ Find the documentation listed at the bottom of the readme. After you've got that
 
 With the API started, and postman loaded up, you're ready to go! (Just make sure `config.js` is configured with your environemnt).
 
+## Security Note
+Althought endpoints are secured by secret tokens, this shouldn't be the only thing you use to secure your server in the future. Please consider restricting access to the server to internal or authorized servers & connections.
+
 ## What is it?
 
 <img src="https://i.imgur.com/vGK8EF3.png" align="left" width="100" />
