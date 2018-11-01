@@ -1,6 +1,7 @@
 
-
-<img src="https://lootsafe.io/app/images/exchange.gif" align="center" />
+<p align="center">
+  <img src="https://lootsafe.io/app/images/exchange.gif" />
+</p>
 
 # LootSafe Core
 > LootSafe Core API 2.0
