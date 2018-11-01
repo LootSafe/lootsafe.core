@@ -4,10 +4,12 @@ LootSafe Core API 2.0
 
 ## What is it?
 
+<img src="https://i.imgur.com/A4LKoPb.png" align="right" height="50" />
 LootSafe Core is a base implementation of asset tokenization currently implemented in on the Ethereum network. 
 The core API is extensible and should remain lightweight and minimal to keep things easy to update & support across
 multiple chains, and other solutions such as centralized database solutions where applicable.
-<img src="https://i.imgur.com/A4LKoPb.png" align="right" height="50" />
+
+
 ---
 
 ## Assets
