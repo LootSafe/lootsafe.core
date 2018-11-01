@@ -6,6 +6,14 @@
 # LootSafe Core
 > LootSafe Core API 2.0
 
+## Installation
+Core requires **node v7.6.0** or higher for ES2015 and async function support. Core also requires an instance of **mongodb** and an active RPC address to connect to the **Ethereum Network**.
+
+> npm install
+> npm run deploy
+> npm start
+
+
 ## What is it?
 
 <img src="https://i.imgur.com/vGK8EF3.png" align="left" width="100" />
