@@ -13,11 +13,12 @@ Core requires **node v7.6.0** or higher for ES2015 and async function support. C
 
 > npm run deploy
 
+## Getting Started
+Find the documentation listed at the bottom of the readme. After you've got that loaded up (we suggest downloading the postman client with [the collection](https://documenter.getpostman.com/view/254497/RzZ3N3Z6)) go ahead and install the API. 
+
 > npm start
 
-## Getting Started
-TODO: List a few resources on getting started with ethereum and ipfs
-
+With the API started, and postman loaded up, you're ready to go! (Just make sure `config.js` is configured with your environemnt).
 
 ## What is it?
 
