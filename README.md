@@ -3,7 +3,7 @@
   <img src="https://lootsafe.io/app/images/exchange.gif" />
 </p>
 
-![discord][https://img.shields.io/badge/DISCORD-CHAT-brightgreen.svg?style=flat-square][https://discord.gg/K37r2w8]
+[![discord][https://img.shields.io/badge/DISCORD-CHAT-brightgreen.svg?style=flat-square]][https://discord.gg/K37r2w8]
 
 # LootSafe Core
 > LootSafe Core API 2.0
