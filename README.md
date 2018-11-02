@@ -61,11 +61,11 @@ an IPFS hash to the metadata, this is useful when the metadata is an image, 3D m
 Example metadata is outlined below in the asset example. 
 
 
-<img src="https://i.imgur.com/NuW1w1Z.png" width="250" />
+
 
 **Asset Example:**
 
-|                 |                   |
+| **Card**        |    <img src="https://i.imgur.com/NuW1w1Z.png" width="250" />               |
 |-----------------|-------------------|
 | **Icon**        |<img src="https://i.imgur.com/QJSFuKW.png"  height=250 /> <img src="https://images-ext-2.discordapp.net/external/nigBBQFV2M-Xl1L2BqzAsCYJJpQ0gL41Rv3PhPH-DQw/https/gateway.ipfs.io/ipfs/QmcLpZJptMhtpYTKRmUgTthCUErazPujZcpn4fJGDFYV6H"  height=250 /> |
 | **Name**        | Philanthropy Draw |
