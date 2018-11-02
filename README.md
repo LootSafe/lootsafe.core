@@ -61,6 +61,8 @@ an IPFS hash to the metadata, this is useful when the metadata is an image, 3D m
 Example metadata is outlined below in the asset example. 
 
 
+<img src="https://i.imgur.com/NuW1w1Z.png" width="250" />
+
 **Asset Example:**
 
 |                 |                   |
