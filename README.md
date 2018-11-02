@@ -64,6 +64,7 @@ Example metadata is outlined below in the asset example.
 
 
 **Asset Example:**
+
 | **Key**         |  **Value**        |
 |-----------------|-------------------|
 | **Card**        |    <img src="https://i.imgur.com/NuW1w1Z.png" width="250" />               |
