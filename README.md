@@ -46,10 +46,9 @@ multiple chains, and other solutions such as centralized database solutions wher
 
 Assets are simply **ERC20** tokens with additional metadata functionality bolted on. 
 We've kept the solution simple here, other assets such as **ERC721** are planned as 
-extensions to core however we do not believe they are necessary for the majority of applications. Most games support a 
-limited amount of unique assets whereas millions of those assets are distributed to players. With this in mind **ERC20**
-'s widespread adoption makes it a great choice. Thus the core implementation 
-supports **ERC20** and other token specifications will be supported through the use of extensions. 
+extensions to core. Most games support a limited amount of unique assets whereas millions of those assets are 
+distributed to players. With this in mind **ERC20**'s widespread adoption makes it a great choice. 
+Thus the core implementation supports **ERC20** and other token specifications will be supported through the use of extensions. 
 
 
 <img src="https://i.imgur.com/EgwSq3o.png" align="left" height="120" />
