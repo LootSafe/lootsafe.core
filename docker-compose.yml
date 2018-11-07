@@ -1,0 +1,56 @@
+version: "3"
+services:
+  #NODE
+  node:
+    image: "node:8"
+    depends_on:
+      - ganache
+      - mongo
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - "./lootsafe.core:/home/node/app"
+      - "./npm_logs:/root/.npm/_logs/"
+    ports:
+      - "1337:1337"
+    expose:
+      - "1337"
+    privileged: true
+    stdin_open: true
+    tty: true
+    command: bash -c "npm install &&  npm run deploy && npm start"
+
+  #MONGO DB
+  mongo:
+    image: "mongo"
+    stdin_open: true
+    tty: true
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    expose:
+     - "27017"
+    volumes:
+      - ./mongodata/:/data/db
+
+  #GNACHE
+  ganache:
+    image: "trufflesuite/ganache-cli:latest"
+    stdin_open: true
+    tty: true
+    expose:
+      - "8545"
+    entrypoint:
+      - node
+      - ./build/cli.node.js
+      - --host=0.0.0.0
+      - --port=8545
+      - --gasLimit=7992181
+    command: ["-h=0.0.0.0"]
+    command: "npm run testrpc"
+
+volumes:
+  node:
+
+  mongo:
