@@ -79,18 +79,20 @@ Example metadata is outlined below in the asset example.
 |                 | The bow was deemed "Philanthropy Draw" and was most famously held by the figure known as Robin Hood.  Many others though throughout history have been the wielders of this bow though, providing gifts to all. |
 
 ---
-## Docker 
+## Docker :whale:
 
 Simply run the following and core will be up and running.
 
 `docker-compose up -d`
 
 
-It's important to note that you'll need to update your config file accordingly. 
+It's important to note that you'll need to update your config file's `provider` and `dbURI` accordingly. 
 
-```
-provider: 'ganache:8545'
-dbURI: 'mongodb://mongo27017'
+```json
+{
+  "provider": "ganache:8545",
+  "dbURI": "mongodb://mongo27017"
+}
 ```
 
 ---
