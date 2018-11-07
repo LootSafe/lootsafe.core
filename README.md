@@ -78,6 +78,21 @@ Example metadata is outlined below in the asset example.
 |                 | Copurnius the brother of the two and creator of this bow was spurned by his siblings for being less beautiful than they. He wished to see an end to the greed that they wove into humanity's creation.  He carved arrowheads from the copper that gleamed in his eyes.  Copurnius was the only one not blinded by greed, but quite literally blinded by his charity. This bow was forged for those with a will for the weak.  |
 |                 | The bow was deemed "Philanthropy Draw" and was most famously held by the figure known as Robin Hood.  Many others though throughout history have been the wielders of this bow though, providing gifts to all. |
 
+---
+## Docker 
+
+Simply run the following and core will be up and running.
+
+`docker-compose up -d`
+
+
+It's important to note that you'll need to update your config file accordingly. 
+
+```
+port: 1337
+provider: 'ganache:8545'
+dbURI: 'mongodb://mongo27017'
+```
 
 ---
 
