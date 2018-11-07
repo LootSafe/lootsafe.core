@@ -89,7 +89,6 @@ Simply run the following and core will be up and running.
 It's important to note that you'll need to update your config file accordingly. 
 
 ```
-port: 1337
 provider: 'ganache:8545'
 dbURI: 'mongodb://mongo27017'
 ```
