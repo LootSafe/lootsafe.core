@@ -91,7 +91,7 @@ It's important to note that you'll need to update your config file's `provider` 
 ```json
 {
   "provider": "ganache:8545",
-  "dbURI": "mongodb://mongo27017"
+  "dbURI": "mongodb://mongo:27017"
 }
 ```
 
