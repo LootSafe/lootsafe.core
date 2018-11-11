@@ -95,7 +95,13 @@ It's important to note that you'll need to update your config file's `provider` 
 }
 ```
 
----
+Also update the truffle config `/lootsafe.core/api/contracts/core/truffle.js` to match the currect host
+
+```json
+{
+  host: "ganache",
+}
+```
 
 ## Documentation
 
