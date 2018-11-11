@@ -80,6 +80,7 @@ Example metadata is outlined below in the asset example.
 
 ---
 ## Docker :whale:
+Make sure to have Docker and Docker Compose installed! [Docker](https://docs.docker.com/install/linux/docker-ce/debian/#uninstall-old-versions) [Docker Compose](https://docs.docker.com/compose/install/)
 Clone the repo and dependencies
 > git clone git@github.com:LootSafe/lootsafe.core.git && cd ./lootsafe.core && git submodule update --init --recursive
 
