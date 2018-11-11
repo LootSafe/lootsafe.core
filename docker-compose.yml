@@ -10,7 +10,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - "./lootsafe.core:/home/node/app"
+      - "./:/home/node/app"
       - "./npm_logs:/root/.npm/_logs/"
     ports:
       - "1337:1337"
