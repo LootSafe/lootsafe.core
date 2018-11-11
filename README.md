@@ -80,11 +80,11 @@ Example metadata is outlined below in the asset example.
 
 ---
 ## Docker :whale:
+Clone the repo and dependencies
+> git clone git@github.com:LootSafe/lootsafe.core.git && git submodule update --init --recursive
 
 Simply run the following and core will be up and running.
-
-`docker-compose up -d`
-
+> docker-compose up -d
 
 It's important to note that you'll need to update your config file's `provider` and `dbURI` accordingly. 
 
