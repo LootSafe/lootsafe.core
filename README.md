@@ -99,7 +99,7 @@ Also update the truffle config `/lootsafe.core/api/contracts/core/truffle.js` to
 
 ```json
 {
-  host: "ganache",
+  "host": "ganache",
 }
 ```
 
