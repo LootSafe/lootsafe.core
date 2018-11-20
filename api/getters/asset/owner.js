@@ -6,9 +6,9 @@ const { contracts } = require('../../../config');
  * @fetcher
  * @returns the owner of an asset
  */
-module.exports = () => {
-    const registry = require(`${contracts.buildDir}/Asset.json`);
-    return connect(registry.abi, contracts.registry).methods.owner().call((err, owner) => {
+module.exports = (address) => {
+    const asset = require(`${contracts.buildDir}/Asset.json`);
+    return connect(asset.abi, address).methods.owner().call((err, owner) => {
         return owner;
     });
 };
