@@ -3,6 +3,10 @@
   <img src="https://lootsafe.io/app/images/exchange.gif" />
 </p>
 
+<a href="https://discord.gg/K37r2w8" target="_blank">
+  <img src="https://img.shields.io/badge/DISCORD-CHAT-brightgreen.svg?style=flat-square" />
+</a>
+
 # LootSafe Core
 > LootSafe Core API 2.0
 
@@ -40,12 +44,11 @@ multiple chains, and other solutions such as centralized database solutions wher
 
 <img src="https://i.imgur.com/A4LKoPb.png" align="right" height="150" />
 
-Assets are simply **ERC20** tokens with additional metadata functionality bolted on.. 
+Assets are simply **ERC20** tokens with additional metadata functionality bolted on. 
 We've kept the solution simple here, other assets such as **ERC721** are planned as 
-extensions to core however we do not believe they are necessary for the majority of solutions. Most games support a 
-limited amount of unique assets whereas millions of those assets are distributed to players. With this in mind **ERC20**
-'s widespread adoption makes it a great choice. Thus the core implementation 
-supports **ERC20** and other token specifications will be supported through the use of extensions. 
+extensions to core. Most games support a limited amount of unique assets whereas millions of those assets are 
+distributed to players. With this in mind **ERC20**'s widespread adoption makes it a great choice. 
+Thus the core implementation supports **ERC20** and other token specifications will be supported through the use of extensions. 
 
 
 <img src="https://i.imgur.com/EgwSq3o.png" align="left" height="120" />
@@ -57,10 +60,13 @@ an IPFS hash to the metadata, this is useful when the metadata is an image, 3D m
 Example metadata is outlined below in the asset example. 
 
 
+
+
 **Asset Example:**
 
-|                 |                   |
+| **Key**         |  **Value**        |
 |-----------------|-------------------|
+| **Card**        |    <img src="https://i.imgur.com/NuW1w1Z.png" width="250" />               |
 | **Icon**        |<img src="https://i.imgur.com/QJSFuKW.png"  height=250 /> <img src="https://images-ext-2.discordapp.net/external/nigBBQFV2M-Xl1L2BqzAsCYJJpQ0gL41Rv3PhPH-DQw/https/gateway.ipfs.io/ipfs/QmcLpZJptMhtpYTKRmUgTthCUErazPujZcpn4fJGDFYV6H"  height=250 /> |
 | **Name**        | Philanthropy Draw |
 | **Symbol**      | DRAW              |
@@ -72,8 +78,34 @@ Example metadata is outlined below in the asset example.
 |                 | Copurnius the brother of the two and creator of this bow was spurned by his siblings for being less beautiful than they. He wished to see an end to the greed that they wove into humanity's creation.  He carved arrowheads from the copper that gleamed in his eyes.  Copurnius was the only one not blinded by greed, but quite literally blinded by his charity. This bow was forged for those with a will for the weak.  |
 |                 | The bow was deemed "Philanthropy Draw" and was most famously held by the figure known as Robin Hood.  Many others though throughout history have been the wielders of this bow though, providing gifts to all. |
 
-
 ---
+## Docker :whale:
+Make sure to have Docker and Docker Compose installed! 
+
+[Docker](https://docs.docker.com/install/linux/docker-ce/debian/#uninstall-old-versions) | [Docker Compose](https://docs.docker.com/compose/install/)
+
+Clone the repo and dependencies
+> git clone git@github.com:LootSafe/lootsafe.core.git && cd ./lootsafe.core && git submodule update --init --recursive
+
+Simply run the following and core will be up and running../ 
+> docker-compose up -d
+
+It's important to note that you'll need to update your config file's `provider` and `dbURI` accordingly. 
+
+```json
+{
+  "provider": "ganache:8545",
+  "dbURI": "mongodb://mongo:27017"
+}
+```
+
+Also update the truffle config `/lootsafe.core/api/contracts/core/truffle.js` to match the currect host
+
+```json
+{
+  "host": "ganache",
+}
+```
 
 ## Documentation
 

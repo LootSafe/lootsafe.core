@@ -3,7 +3,7 @@ module.exports = {
         registry: '0xa5c55ef045e6715142dfce361b9dc9a0b255e746',
         buildDir: `${__dirname}/api/contracts/core/build/contracts`
     },
-    port: 1007,
+    port: 1337,
     version: 1,
     dbURI: 'mongodb://localhost/lscore',
     defaultAccount: '0x7913d6f01e76c50fa1188b72f7a5a24a00294579',
